@@ -5,7 +5,7 @@ export default function CocktailCategories(props) {
   return (
     <div>
       <ul>
-        {props.drinkTypes.map(drinkType => <li><Link to={`/drink-types/${drinkType}`}>{drinkType}</Link></li>)}
+        {props.drinkTypes.map(drinkType => <li> <Link to={`/drink-types/${encodeURIComponent(drinkType)}`}>{drinkType}</Link></li>)}
       </ul>
     </div>
   )
